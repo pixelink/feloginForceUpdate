@@ -9,7 +9,7 @@ plugin.tx_feloginchangedata {
 [globalVar = TSFE:fe_user|user|changed_data = 0] && [globalVar = TSFE:page|fe_group != 0]
 
     config >
-    config.additionalHeaders = Location: http://www.fullUrltoFirstLoginPage
+    config.additionalHeaders = Location: {$plugin.tx_feloginchangedata.settings.fullUrlToEditPage}
     page >
     page = PAGE
     page.10 = TEXT

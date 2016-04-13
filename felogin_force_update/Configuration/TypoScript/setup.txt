@@ -1,0 +1,23 @@
+plugin.tx_feloginchangedata {
+    settings {
+        forceDataChange = {$plugin.tx_feloginchangedata.settings.forceDataChange}
+        firstLoginPid = {$plugin.tx_feloginchangedata.settings.firstLoginPid}
+        loginUsergroup = {$plugin.tx_feloginchangedata.settings.loginUsergroup}
+    }
+}
+
+[globalVar = TSFE:fe_user|user|changed_data = 0] && [globalVar = TSFE:page|fe_group != 0]
+
+    config >
+    config.additionalHeaders = Location: http://www.fullUrltoFirstLoginPage
+    page >
+    page = PAGE
+    page.10 = TEXT
+
+[global]
+
+
+
+
+
+

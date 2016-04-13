@@ -1,0 +1,9 @@
+plugin.tx_feloginchangedata{
+
+    settings {
+        forceDataChange = 1
+        firstLoginPid = 2
+        loginUsergroup = 1
+    }
+
+}

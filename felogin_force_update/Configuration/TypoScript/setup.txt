@@ -1,15 +1,15 @@
-plugin.tx_feloginchangedata {
+plugin.tx_feloginforceupdate {
     settings {
-        forceDataChange = {$plugin.tx_feloginchangedata.settings.forceDataChange}
-        firstLoginPid = {$plugin.tx_feloginchangedata.settings.firstLoginPid}
-        loginUsergroup = {$plugin.tx_feloginchangedata.settings.loginUsergroup}
+        forceDataChange = {$plugin.tx_feloginforceupdate.settings.forceDataChange}
+        firstLoginPid = {$plugin.tx_feloginforceupdate.settings.firstLoginPid}
+        loginUsergroup = {$plugin.tx_feloginforceupdate.settings.loginUsergroup}
     }
 }
 
 [globalVar = TSFE:fe_user|user|changed_data = 0] && [globalVar = TSFE:page|fe_group != 0]
 
     config >
-    config.additionalHeaders = Location: {$plugin.tx_feloginchangedata.settings.fullUrlToEditPage}
+    config.additionalHeaders = Location: {$plugin.tx_feloginforceupdate.settings.fullUrlToEditPage}
     page >
     page = PAGE
     page.10 = TEXT

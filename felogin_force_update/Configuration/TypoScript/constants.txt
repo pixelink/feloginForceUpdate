@@ -1,4 +1,4 @@
-plugin.tx_feloginchangedata{
+plugin.tx_feloginforceupdate{
 
     settings {
         forceDataChange = 1

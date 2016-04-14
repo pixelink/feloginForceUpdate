@@ -41,7 +41,7 @@ class FirstLoginHook
      * the redirect takes effect
      */
     public function firstLogin() {
-        if ($this->settings['forceDataChange'] == 1 ) {
+        if ($this->settings['forceDataChange'] == 1 && $this->user['changed_data'] == 0 ) {
             \TYPO3\CMS\Core\Utility\HttpUtility::redirect($this->generateUri($this->settings['firstLoginPid'], 1));
         }
     }

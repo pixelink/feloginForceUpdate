@@ -3,7 +3,7 @@
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
     'Pixelink.' . $_EXTKEY,
-    'logindatachange',
+    'feloginforceupdate',
     'ChangeUserData'
 );
 

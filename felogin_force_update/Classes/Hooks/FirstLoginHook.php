@@ -32,7 +32,7 @@ class FirstLoginHook
      */
     function __construct() {
         $this->user = $GLOBALS['TSFE']->fe_user->user;
-        $this->settings = $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_feloginchangedata.']['settings.'];
+        $this->settings = $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_feloginforceupdate.']['settings.'];
     }
 
 

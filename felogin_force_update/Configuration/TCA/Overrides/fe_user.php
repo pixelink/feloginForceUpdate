@@ -6,7 +6,7 @@ $tmp_feuserextend_columns = [
 
     'changed_data' => [
         'exclude' => 1,
-        'label' => 'Userdata changed',
+        'label' => 'LLL:EXT:feloginforceupdate/Resources/Private/Language/locallang_db.xlf:datachangedStatus',
         'config' => [
             'type' => 'input',
             'size' => 1,
@@ -16,4 +16,4 @@ $tmp_feuserextend_columns = [
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('fe_users', $tmp_feuserextend_columns, 1);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('fe_users', ',--div--;Userdata changed,changed_data');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('fe_users', ',--div--;LLL:EXT:feloginforceupdate/Resources/Private/Language/locallang_db.xlf:feUsersTab,changed_data');

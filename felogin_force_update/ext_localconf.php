@@ -14,10 +14,17 @@ $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['felogin']['login_confirmed']['first_logi
 
 
 // Hook FeManager after editing
+
+// Check if class with given femanager namespace is given
+if (class_exists('In2\Femanager\Controller\EditController') == true) {
+    $className = 'In2\Femanager\Controller\EditController';
+} else{
+    $className = 'In2code\Femanager\Controller\EditController';
+}
 /** @var \TYPO3\CMS\Extbase\SignalSlot\Dispatcher $signalSlotDispatcher */
 $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\SignalSlot\\Dispatcher');
 $signalSlotDispatcher->connect(
-    'In2code\Femanager\Controller\EditController',
+    $className,
     'updateActionBeforePersist',
     'Pixelink\Feloginforceupdate\Domain\Service\UpdateDataStatus',
     'send',

@@ -17,7 +17,8 @@ Don't be afraid. Easy to setup, just follow the installation instructions.
 Installation
 ------------
 
-Be aware that the extension depends on fe_login and femanager extension wich must be installed and is, until now, tested in TYPO3 7.6 only.
+The extension is tested in TYPO3 6.2 and TYPO3 7.6.4
+Be aware that the extension depends on fe_login and femanager extension wich must be installed.
 There should also be a fe_login form integrated somewhere on your page.
 
 - Install the extension via extension manager or clone from github.
